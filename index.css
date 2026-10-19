@@ -1,0 +1,28 @@
+* {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeXCpzFR14cIlZ-6ny7DFHTd9Pl65dh2dpSCbyodFKVQ&s=10");
+
+}
+p {
+    margin-top: 10px;
+    max-width: 200px;
+    font-size: 14px;
+    
+} .text-1:hover {
+    color: red;
+  
+}
+
+.btn {
+    background-color: red;
+    border-radius: 15px;
+    transition: 0.3s;
+    border:solid 1px red;
+    box-shadow: 0px 0px 5px 0px black;
+    cursor: pointer;
+}
+.text-2 {
+    color: blue;
+}
+.text-3 {
+    color: green;
+}   
