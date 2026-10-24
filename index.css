@@ -1,28 +1,122 @@
 * {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeXCpzFR14cIlZ-6ny7DFHTd9Pl65dh2dpSCbyodFKVQ&s=10");
+margin: 0;
+padding: 0;
 
 }
-p {
-    margin-top: 10px;
-    max-width: 200px;
-    font-size: 14px;
+.language {
+  color: white;
+}
+body {
+    background-color: #000000;
+    min-height: 200vh;
+
+
     
-} .text-1:hover {
-    color: red;
+}
+header {
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+    /* background-color: yellow; */
   
 }
+.header-left svg{
+  width: 100px;
+  display: block;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-bottom: 5px;
 
-.btn {
-    background-color: red;
-    border-radius: 15px;
-    transition: 0.3s;
-    border:solid 1px red;
-    box-shadow: 0px 0px 5px 0px black;
+}
+
+
+.header-right {
+display: flex;
+text-align: center;
+gap: 30px;
+margin-right: 60px;
+align-items: center;
+
+}
+.location-button {
+   
+  cursor: pointer;
+  background-color: rgb(229, 229, 43);
+  border:1px solid transparent;
+  border-radius: 50px;
+  padding: 10px 20px;
+  color: rgb(5, 4, 4);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  
+
+}
+.location-button:hover {
+   background-color: rgb(235, 252, 2);
+color: rgb(0, 0, 0);
+box-shadow: 0px 0px 15px rgba(255, 254, 254, 0.5);
+}
+ 
+
+
+/* 2 */
+/* 2 */
+/* 2 */
+/*select language */
+/* Контейнер для языков */
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Темно-серый фон плашки */
+    border-radius: 30px; /* Закругленные края */
+    padding: 4px; /* Отступы внутри */
+    position: relative; /* Якорь для движущейся плашки */
+    width: max-content; /* Ширина подстраивается под кнопки */
+    margin-right: 20px; /* Отступ от других элементов в шапке (можешь изменить) */
+}
+
+/* Белая плашка, которая ездит */
+.slider {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    height: calc(100% - 8px); /* Высота контейнера минус отступы */
+    background-color: #ffffff; /* Белый цвет */
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Легкая тень */
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1); /* Плавный переезд */
+    z-index: 1; /* Плашка под текстом */
+}
+
+/* Сами кнопки */
+.lang-btn {
+    position: relative;
+    z-index: 2; /* Текст поверх плашки */
+    background: transparent;
+    border: none;
+    color: #888; /* Серый текст по умолчанию */
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 16px;
     cursor: pointer;
+    transition: color 0.3s ease; /* Плавная смена цвета текста */
 }
-.text-2 {
-    color: blue;
+
+/* Цвет текста для активной кнопки (когда плашка под ней) */
+.lang-btn.active {
+    color: #000000; /* Черный текст */
 }
-.text-3 {
-    color: green;
-}   
+
+
+
+
+
+
+
+/* .image-1 {
+  background-image: url('pexels-photo-27626762.avif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+} */
+
